@@ -1,0 +1,40 @@
+{
+  "name": "express-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Boca Code", 
+    "email": "",
+    "url": ""
+  },
+  "contributors": [
+    "Rue Johnson",  
+    "Adriana Perdomo"],
+  "scripts": {
+    "start": "nodemon .", 
+    "deploy": "npm run text && tsc && firebase deploy && git push origin main", 
+    "dev": "",
+    "test": "jest example.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.6.0"
+  }
+}
